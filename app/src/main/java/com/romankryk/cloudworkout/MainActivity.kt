@@ -2,7 +2,6 @@ package com.romankryk.cloudworkout
 
 import android.os.Bundle
 import android.os.PersistableBundle
-import android.support.v4.app.Fragment
 import com.arellomobile.mvp.MvpAppCompatActivity
 import com.romankryk.cloudworkout.fragments.showToast
 import ru.terrakok.cicerone.android.SupportFragmentNavigator
@@ -16,13 +15,13 @@ class MainActivity : MvpAppCompatActivity() {
 
     private val navigator = object : SupportFragmentNavigator(supportFragmentManager, R.id.my_nav_host_fragment) {
 
-        override fun createFragment(screenKey: String?, data: Any?): Fragment {
+        override fun createFragment(screenKey: String?, data: Any?): android.support.v4.app.Fragment? {
             /*when(screenKey) {
                 LIST_SCREEN -> return ListFragment.getNewInstance(data)
                 DETAILS_SCREEN -> return DetailsSupportFragment.getNewInstance(data)
                 else -> throw RuntimeException("Unknown screen key!")
             }*/
-            return Fragment()
+            return android.support.v4.app.Fragment()
         }
 
         override fun showSystemMessage(message: String) {
