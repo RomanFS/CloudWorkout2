@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:name="com.example.cloudworkout.fragments.Start"
+             style="@style/match"
+             android:background="@android:color/white">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/page_num"
+                style="@style/wrap"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:text="1 of 5"/>
+
+        <TextView
+                style="@style/h2"
+                android:layout_gravity="center"
+                android:text="@string/page1"/>
+
+        <TextView
+                style="@style/text"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:text="@string/page1_desc"
+                android:textAlignment="center"/>
+    </LinearLayout>
+
+    <RadioGroup
+            style="@style/wrap"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+        <RadioButton
+                android:id="@+id/male"
+                style="@style/wrap"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:background="@drawable/gender_selector_male"
+                android:button="@android:color/transparent"/>
+
+        <RadioButton
+                android:id="@+id/female"
+                style="@style/wrap"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:background="@drawable/gender_selector_female"
+                android:button="@android:color/transparent"/>
+    </RadioGroup>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/start_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/border"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/back"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_back"
+                android:drawableEnd="@drawable/filename"
+                android:minHeight="0dp"
+                android:textAlignment="textEnd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+                android:id="@+id/next"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:letterSpacing=".1"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="@string/str_continue"
+                android:textAllCaps="false"
+                android:textColor="#0043FF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/back"
+                app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

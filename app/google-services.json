@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "894146380417",
+    "firebase_url": "https://cloud-workout.firebaseio.com",
+    "project_id": "cloud-workout",
+    "storage_bucket": "cloud-workout.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894146380417:android:2d93aab26bafee56",
+        "android_client_info": {
+          "package_name": "com.romankryk.cloudworkout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "894146380417-lquotna9vcrfpmq6u3f4na8qbidmuln3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.romankryk.cloudworkout",
+            "certificate_hash": "f240b55c4774573737997516671736ba87ff1641"
+          }
+        },
+        {
+          "client_id": "894146380417-8j8da45dnod32i9hb1i2kfkrepuan2je.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw8ZLf4-QuHCFbHM3tIpxXs1QjuBo78gI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "894146380417-8j8da45dnod32i9hb1i2kfkrepuan2je.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

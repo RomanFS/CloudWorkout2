@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/whitish"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_image"
+            app:layout_constraintBottom_toBottomOf="@id/train_progress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:alpha="0.4"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_blue_line"
+            app:layout_constraintBottom_toBottomOf="@id/profile_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:contentInsetStart="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_back_blue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    style="@style/text_accent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="20dp"
+                    android:text="Edit"
+                    android:textColor="@color/blueLight"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/full_name"
+            style="@style/h1"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Name"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tool_bar" />
+
+        <TextView
+            android:id="@+id/goal"
+            style="@style/small_text"
+            android:layout_marginStart="40dp"
+            android:text="Muscle gain"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/full_name" />
+
+        <TextView
+            android:id="@+id/plan_text"
+            style="@style/small_text"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="plan name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/goal" />
+
+        <TextView
+            android:id="@+id/plan_name"
+            style="@style/h2"
+            android:layout_marginStart="40dp"
+            android:maxWidth="250dp"
+            android:text="The Complete 4-week Beginner Plan"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/plan_text" />
+
+        <ImageView
+            android:id="@+id/plan_next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_chevron_right"
+            app:layout_constraintBaseline_toBaselineOf="@id/plan_name"
+            app:layout_constraintStart_toEndOf="@id/plan_name" />
+
+        <TextView
+            android:id="@+id/train_progress"
+            style="@style/small_text"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="30% completed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/plan_name" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/dash_bg_white"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    style="@style/h2"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/small_text"
+                    android:text="workouts completed" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/dash_bg_white"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    style="@style/h2"
+                    android:layout_width="match_parent"
+                    android:text="25K kg" />
+
+                <TextView
+                    style="@style/small_text"
+                    android:text="tonnage lifted" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/dash_bg_white"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    style="@style/h2"
+                    android:text="70 kg" />
+
+                <TextView
+                    style="@style/small_text"
+                    android:text="current weight" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/acc_set"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg_white"
+            android:drawableEnd="@drawable/ic_chevron_right"
+            android:minHeight="0dp"
+            android:padding="20dp"
+            android:text="Account Settings"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout3" />
+
+        <Button
+            android:id="@+id/edit_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg_white"
+            android:drawableEnd="@drawable/ic_chevron_right"
+            android:minHeight="0dp"
+            android:padding="20dp"
+            android:text="Edit Profile"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/acc_set" />
+
+        <Button
+            android:id="@+id/invite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg_white"
+            android:drawableEnd="@drawable/ic_chevron_right"
+            android:minHeight="0dp"
+            android:padding="20dp"
+            android:text="Invite Friends"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_profile" />
+
+        <TextView
+            android:id="@+id/signOut"
+            style="@style/h1"
+            android:padding="20dp"
+            android:text="SignOut"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/invite" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

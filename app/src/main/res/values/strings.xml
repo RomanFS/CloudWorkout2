@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Workout Traker</string>
+    <string name="facebook_app_id">336206113727559</string> <string name="fb_login_protocol_scheme">fb336206113727559</string>
+
+    <string name="startTitle">Want Our Advice?</string>
+    <string name="startDesc">Ut justo turpis, accumsan vitae fringilla eu, pellentesque et elit. Nam aliquet mi in consequat lobortis. In venenatis velit at.</string>
+    <string name="let_s_do_it">Let\'s do it</string>
+    <string name="do_it_later">Do it later</string>
+    <string name="str_continue">Continue</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="current_page">Current page</string>
+
+    <string name="page1">Male or female?</string>
+    <string name="page1_desc">Certainly, men and women need different workout approaches 	&#x1F609;</string>
+
+    <string name="page2">Where are you training?</string>
+    <string name="page2_desc">We must know what exercises you can do and what can`t.</string>
+
+    <string name="page3">Units of measurement</string>
+    <string name="page3_desc">Which system of units would you like to use?</string>
+    <string name="page3_bt_en">English (lbs, pounds)</string>
+    <string name="page3_bt_met">Metric (kg, cm)</string>
+
+    <string name="page4">How much do you weigh?</string>
+    <string name="page4_desc">This is used to set up recommendations just for you.</string>
+
+    <string name="page5">How tall are you?</string>
+    <string name="page5_desc">his is used to set up recommendations just for you.</string>
+    <string name="signup_to_continue">SignUp to continue</string>
+    <string name="welcome_to_kenko">Welcome to Kenko</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="by_signing_up_you_agree_to_our_terms_and_privacypolicy">By signing up you agree to our Terms and PrivacyPolicy</string>
+    <string name="login">Login</string>
+    <string name="no_account_yet_create_one">No account yet? <b>Create one</b></string>
+    <string name="finish">Finish</string>
+    <string name="signin">SignIn</string>
+    <string name="sign_up_with_facebook">SignUp with facebook</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="edit">Edit</string>
+    <string name="create_workout">Create workout</string>
+    <string name="dash_desc">You have no workouts yet. Go on and create your first one!</string>
+    <string name="already_have_an_account_login">Already have an account? <b>LogIn</b></string>
+</resources>

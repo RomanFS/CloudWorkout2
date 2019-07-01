@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashboard_bt"
+        android:title="Dashboard"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/stats_bt"
+        android:title="Stats"
+        android:icon="@drawable/ic_insert_chart"/>
+    <item
+        android:id="@+id/calendar_bt"
+        android:title="Calendar"
+        android:icon="@drawable/ic_date_range"/>
+    <item
+        android:id="@+id/checklist_bt"
+        android:title="Checklist"
+        android:icon="@drawable/ic_assignment"/>
+</menu>

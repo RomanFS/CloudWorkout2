@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/img"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="@id/startTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/startTitle"
+        style="@style/h1"
+        android:text="@string/welcome_to_kenko"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <TextView
+        android:id="@+id/startDescription"
+        style="@style/text"
+        android:text="@string/signup_to_continue"
+        app:layout_constraintStart_toStartOf="@id/startTitle"
+        app:layout_constraintTop_toBottomOf="@id/startTitle" />
+
+    <Button
+        android:id="@+id/signUp"
+        style="@style/button"
+        android:text="@string/sign_up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="6:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startDescription" />
+
+    <!--<com.facebook.login.widget.LoginButton
+        android:id="@+id/bt_facebook"
+        style="@style/button"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background_light"
+        android:text="@string/sign_up_with_facebook"
+        app:layout_constraintDimensionRatio="6:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signUp" />-->
+
+    <TextView
+        android:id="@+id/text_view"
+        style="@style/text"
+        android:layout_marginTop="20dp"
+        android:text="@string/already_have_an_account"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="@id/startTitle"
+        app:layout_constraintTop_toBottomOf="@id/signUp" />
+
+    <TextView
+        android:id="@+id/signIn"
+        style="@style/text_accent"
+        android:layout_marginTop="10dp"
+        android:text="@string/sign_in"
+        app:layout_constraintEnd_toEndOf="@id/startTitle"
+        app:layout_constraintTop_toBottomOf="@id/text_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>
