@@ -6,10 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.RelativeLayout
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation
-import com.google.android.material.bottomnavigation.BottomNavigationItemView
 import com.romankryk.cloudworkout.R
-import kotlinx.android.synthetic.main.welcome.*
+
 
 class Welcome : Fragment() {
     //private var navController = Navigation.findNavController(activity!!, R.id.my_nav_host_fragment)
@@ -33,6 +31,11 @@ class Welcome : Fragment() {
     }
 
     companion object {
+        fun getNewInstance(number: Int): Welcome {
+
+            return Welcome()
+        }
+
         private val TAG = "Welcome"
     }
 }

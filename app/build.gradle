@@ -1,8 +1,7 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 28
@@ -45,11 +44,16 @@ dependencies {
 
     implementation 'com.facebook.android:facebook-login:5.1.0'
 
-    implementation 'ru.terrakok.cicerone:cicerone:1.0'
+    implementation 'ru.terrakok.cicerone:cicerone:5.0.0'
     implementation 'androidx.fragment:fragment-ktx:1.0.0'
 
     //MVP Moxy
-    implementation "com.arello-mobile:moxy:1.5.6"
-    implementation "com.arello-mobile:moxy-app-compat:1.5.6"
-    annotationProcessor "com.arello-mobile:moxy-compiler:1.5.6"
+    implementation 'com.arello-mobile:moxy:1.5.6'
+    implementation 'com.arello-mobile:moxy-android:1.5.5'
+    implementation 'com.arello-mobile:moxy-app-compat:1.5.6'
+    annotationProcessor 'com.arello-mobile:moxy-compiler:1.5.5'
+
+    // Toothpick
+    implementation 'com.github.stephanenicolas.toothpick:toothpick-runtime:2.1.0'
+    kapt "com.github.stephanenicolas.toothpick:toothpick-compiler:2.1.0"
 }
