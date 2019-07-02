@@ -8,10 +8,8 @@ import ru.terrakok.cicerone.android.support.SupportAppScreen
 
 
 class Screens {
-    public val main = object: Screen() {
-    }
+    class WelcomeScreen: Screen() {
 
-    fun doit(){
-        main.screenKey
+
     }
 }

@@ -56,4 +56,5 @@ dependencies {
     // Toothpick
     implementation 'com.github.stephanenicolas.toothpick:toothpick-runtime:2.1.0'
     kapt "com.github.stephanenicolas.toothpick:toothpick-compiler:2.1.0"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 }

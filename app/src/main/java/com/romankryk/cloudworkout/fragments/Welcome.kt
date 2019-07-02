@@ -31,7 +31,7 @@ class Welcome : Fragment() {
     }
 
     companion object {
-        fun getNewInstance(number: Int): Welcome {
+        fun getNewInstance(): Welcome {
 
             return Welcome()
         }

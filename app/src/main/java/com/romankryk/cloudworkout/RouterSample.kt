@@ -20,7 +20,7 @@ class RouterSample : BaseRouter(){
     fun newRootScreenWithMessage(screenKey: String, data: Any?, message: String){
         if (navigator != null) {
             navigator!!.applyCommands(arrayOf(BackTo(null)))
-            navigator!!.applyCommands(arrayOf(Forward('')))
+            //navigator!!.applyCommands(arrayOf(Forward()))
         }
     }
 }
